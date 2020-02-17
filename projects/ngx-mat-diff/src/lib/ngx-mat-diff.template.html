@@ -5,5 +5,5 @@
 <p>{{right}}</p>
 <br>
 <ng-container *ngFor="let d of diffService.diff()">
-    <p [ngStyle]="'color: '">{{d.getLine()}}</p>
+    <p>{{d.getLine()}}</p>
 </ng-container>
