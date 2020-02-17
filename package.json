@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-ci": "ng build --prod",
-    "test-ci": "ng test my-first-lib --watch=false --browsers=ChromeHeadless"
+    "test-ci": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {
