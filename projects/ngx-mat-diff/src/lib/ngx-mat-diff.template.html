@@ -1,9 +1,9 @@
-<h4>Holis</h4>
+<h4>NgxMatDiff</h4>
 
 <p>{{left}}</p>
 <br>
 <p>{{right}}</p>
 <br>
 <ng-container *ngFor="let d of diffService.diff()">
-    <p>{{d.getLine()}}</p>
+    <p [ngStyle]="getStyle(d.color())">{{d.symbol()}} {{d.getLine()}}</p>
 </ng-container>
