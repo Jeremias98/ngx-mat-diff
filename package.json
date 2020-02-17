@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-ci": "ng build ngx-mat-diff --prod",
+    "build-ci": "ng build ngx-mat-diff",
     "test-ci": "ng test ngx-mat-diff --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
