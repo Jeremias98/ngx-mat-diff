@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-mat-diff": [
+        "dist/ngx-mat-diff"
+      ],
+      "ngx-mat-diff/*": [
+        "dist/ngx-mat-diff/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

@@ -1,0 +1,9 @@
+<h4>Holis</h4>
+
+<p>{{left}}</p>
+<br>
+<p>{{right}}</p>
+<br>
+<ng-container *ngFor="let d of diffService.diff()">
+    <p [ngStyle]="'color: '">{{d.getLine()}}</p>
+</ng-container>
