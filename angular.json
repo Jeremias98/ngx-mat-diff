@@ -130,7 +130,8 @@
             "styles": [
               "projects/ngx-mat-diff-showcase/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "codeCoverage": true
           }
         },
         "lint": {

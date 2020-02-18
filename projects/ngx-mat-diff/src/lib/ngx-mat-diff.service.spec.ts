@@ -9,7 +9,7 @@ import { Remove } from './clases/state/remove';
 describe('NgxMatDiffService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
-  it('Deberia Crearse', () => {
+  it('Should create', () => {
     const service: NgxMatDiffService = TestBed.get(NgxMatDiffService);
     expect(service).toBeTruthy();
   });
@@ -147,9 +147,9 @@ describe('NgxMatDiffService', () => {
     expect(state.symbol()).toBe("-");
   });
 
-  it('Keep state should have \'=\' symbol', () => {
+  it('Keep state should not have symbol', () => {
     let state: Keep = new Keep("Line");
-    expect(state.symbol()).toBe("=");
+    expect(state.symbol()).toBe("");
   });
 
   it('Insert state should have \'+\' symbol', () => {

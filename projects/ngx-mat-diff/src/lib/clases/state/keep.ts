@@ -9,7 +9,7 @@ export class Keep implements State {
     }
 
     symbol(): string {
-        return "=";
+        return "";
     }
     color(): string {
         return "black";

@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NgxMatDiffComponent } from './ngx-mat-diff.component';
+import { DebugElement } from '@angular/core';
+import { By } from '@angular/platform-browser';
+import { NgxMatDiffService } from './ngx-mat-diff.service';
 
 describe('NgxMatDiffComponent', () => {
   let component: NgxMatDiffComponent;
@@ -8,9 +11,10 @@ describe('NgxMatDiffComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxMatDiffComponent ]
+      declarations: [NgxMatDiffComponent],
+      providers: [NgxMatDiffService]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +23,17 @@ describe('NgxMatDiffComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('Should have a left text container', () => {
+    let textarea: DebugElement = fixture.debugElement.query(By.css('.left-text-container'));
+    expect(textarea).toBeTruthy();
+  });
+
+  it('Should have a right text container', () => {
+    let textarea: DebugElement = fixture.debugElement.query(By.css('.right-text-container'));
+    expect(textarea).toBeTruthy();
   });
 });

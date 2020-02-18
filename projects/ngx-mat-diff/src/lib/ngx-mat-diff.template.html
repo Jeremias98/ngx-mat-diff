@@ -7,3 +7,5 @@
 <ng-container *ngFor="let d of diffService.diff()">
     <p [ngStyle]="getStyle(d.color())">{{d.symbol()}} {{d.getLine()}}</p>
 </ng-container>
+<div class="left-text-container"></div>
+<div class="right-text-container"></div>
