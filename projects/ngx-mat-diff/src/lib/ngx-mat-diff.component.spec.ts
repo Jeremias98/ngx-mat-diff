@@ -5,7 +5,8 @@ import { DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import { NgxMatDiffService } from './ngx-mat-diff.service';
 import { NgxMatTextContainerComponent } from './components/ngx-mat-text-container/ngx-mat-text-container.component';
-import { NgxMatDiffLeftDirective } from './directives/ngx-mat-diff-left.directive';
+import { NgxMatDiffLeftDirective } from './directives/ngx-mat-diff-left/ngx-mat-diff-left.directive';
+import { NgxMatDiffRightDirective } from './directives/ngx-mat-diff-right/ngx-mat-diff-right.directive';
 
 describe('NgxMatDiffComponent', () => {
   let component: NgxMatDiffComponent;
