@@ -4,3 +4,6 @@
 <ng-container *ngFor="let d of diffService.diff()">
     <p [ngStyle]="getStyle(d.color())">{{d.symbol()}} {{d.getLine()}}</p>
 </ng-container>
+<textarea ngxMatDiffLeft></textarea>
+<div ngxMatDiffLeft>Pepe pompin</div>
+<!-- <ngx-mat-text-container></ngx-mat-text-container> -->

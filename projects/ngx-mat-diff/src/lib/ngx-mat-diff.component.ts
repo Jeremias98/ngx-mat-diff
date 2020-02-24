@@ -14,8 +14,8 @@ export class NgxMatDiffComponent implements OnInit {
   right: string = "jurguemos en el vosque mmientras el lobo no esta";
 
   ngOnInit() {
-    this.diffService.setLeftText(this.left);
-    this.diffService.setRightText(this.right);
+    // this.diffService.setLeftText(this.left);
+    // this.diffService.setRightText(this.right);
   }
   getStyle(color: string) {
     return { color: color };
