@@ -34,24 +34,4 @@ describe('NgxMatDiffComponent', () => {
   it('Should create', () => {
     expect(component).toBeTruthy();
   });
-
-  // it('Should have a left text container', () => {
-  //   let textarea: DebugElement = fixture.debugElement.query(By.css('.left-text-container'));
-  //   expect(textarea).toBeTruthy();
-  // });
-
-  // it('Should have a right text container', () => {
-  //   let textarea: DebugElement = fixture.debugElement.query(By.css('.right-text-container'));
-  //   expect(textarea).toBeTruthy();
-  // });
-
-  // it('Should have a left text container with', () => {
-  //   let textarea: DebugElement = fixture.debugElement.query(By.css('.left-text-container'));
-  //   expect(textarea).toBeTruthy();
-  // });
-
-  // it('Should have a right text container', () => {
-  //   let textarea: DebugElement = fixture.debugElement.query(By.css('.right-text-container'));
-  //   expect(textarea).toBeTruthy();
-  // });
 });

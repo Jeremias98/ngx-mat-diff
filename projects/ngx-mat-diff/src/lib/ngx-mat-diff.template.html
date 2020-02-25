@@ -1,9 +1,5 @@
 <h4>NgxMatDiff</h4>
-<div class="left-text-container">{{diffService.getLeftText()}}</div>
-<div class="right-text-container">{{diffService.getRightText()}}</div>
-<ng-container *ngFor="let d of diffService.diff()">
-    <p [ngStyle]="getStyle(d.color())">{{d.symbol()}} {{d.getLine()}}</p>
-</ng-container>
 <textarea ngxMatDiffLeft></textarea>
-<div ngxMatDiffRight>Pepe pompin</div>
-<!-- <ngx-mat-text-container></ngx-mat-text-container> -->
+<!-- <div ngxMatDiffRight>Pepe pompin</div> -->
+<textarea ngxMatDiffRight></textarea>
+<ngx-mat-text-container></ngx-mat-text-container>

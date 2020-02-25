@@ -1,8 +1,14 @@
 <div class="container shadow-2dp">
-    <div class="line">
-        <div class="line-number">1</div>
-        <div class="line-text">
-            <pre>Esto es un texto de prueba</pre>
+    <ng-container *ngFor="let d of diffService.diff(); let lineNumber = index">
+        <div class="line">
+            <div class="line-col-number">
+                <div class="line-number">{{lineNumber + 1}}</div>
+            </div>
+            <div class="line-col-text">
+                <div class="line-text">
+                    <pre [ngStyle]="getStyle(d.color())">{{d.symbol()}} {{d.getLine()}}</pre>
+                </div>
+            </div>
         </div>
-    </div>
+    </ng-container>
 </div>

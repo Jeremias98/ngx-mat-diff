@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NgxMatDiffService } from '../../ngx-mat-diff.service';
 
 @Component({
@@ -11,6 +11,10 @@ export class NgxMatTextContainerComponent implements OnInit {
   constructor(public diffService: NgxMatDiffService) { }
 
   ngOnInit() {
+  }
+
+  getStyle(color: string) {
+    return { color: color };
   }
 
 }
